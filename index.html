@@ -1,6 +1,6 @@
 <!--
  * @Author       : jonnyzhang02 71881972+jonnyzhang02@users.noreply.github.com
- * @LastEditTime : 2023-07-08 22:44
+ * @LastEditTime : 2023-07-08 23:06
  * @FilePath     : \website\index.html
  * 
  * coded by ZhangYang@BUPT, my email is zhangynag0207@bupt.edu.cn
@@ -8,10 +8,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>我的作品集</title>
+    <title>个人简历</title>
     <style>
         body {
-            background-color: #d493ed;
+            background-color: #ffffff;
             font-family: Arial, sans-serif;
         }
         .container {
@@ -65,17 +65,72 @@
         .item p {
             font-size: 20px;
         }
+
+        ol {
+        counter-reset: item;
+        padding-left: 0;
+        list-style-type: none;
+        }
+        
+        li {
+            display: flex;
+            align-items: flex-start;
+            counter-increment: item;
+            margin-bottom: 10px;
+        }
+        
+        li::before {
+            content: counter(item) ".";
+            font-weight: bold;
+            margin-right: 10px;
+        }
     </style>
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>我的作品集</h1>
+            <h1>一、个人荣誉</h1>
         </div>
     </header>
-
     <div class="container">
-        <h2>视频</h2>
+        <h2>省级荣誉3项，校级荣誉10项</h2>
+        <ol>
+        <li>2022.12/国家励志奖学金/湖南省教育厅</li>
+        <li>2022.12/三好学生/长沙师范学院</li>
+        <li>2022.6/社会实践奖学金/长沙师范学院</li>
+        <li>2022.6/湖南省第八届大学生思政理论课研究性学习竞赛《自媒体时代下大学生传承非遗文化的路径研究——以邵阳花鼓戏为例》本科组二等奖/长沙师范学院</li>
+        <li>2022.5/优秀共青团员干部/长沙师范学院委员会</li>
+        <li>2022.5/“吾爱舞蹈”儿童舞蹈创作线上平台建设及推广研究创业训练立项/长沙师范学院</li>
+        <li>2022.1/湖南省消费帮扶营销大赛先进个人/湖南省消费帮扶组委会</li>
+        <li>2021.12/国家励志奖学金/湖南省教育厅</li>
+        <li>2021.11/湖南省第七届大学生思政理论课研究性学习竞赛《关于“互联网＋网销模式”在洞口县的实施推广的实践研究》本科组三等奖/长沙师范学院</li>
+        <li>2021.8/疫情防控优秀志愿者/陵阳镇人民政府</li>
+        </ol>
+        <div class="gallery">
+            <div class="item">
+                <img src="rouyu.jpg" alt="个人荣誉">
+                <p>个人荣誉</p>
+            </div>     
+        </div>
+    </div>
+
+    <header>
+        <div class="container">
+            <h1>二、我的作品集</h1>
+        </div>
+    </header>
+    <div class="container">
+        <h2>舞蹈</h2>
+        <div class="gallery">
+            <div class="item">
+                <video controls>
+                    <source src="3.mp4" type="video/mp4">
+                </video>
+                <p> 爵士舞蹈《完美降落》</p>
+            </div>
+        </div>
+
+        <h2>钢琴</h2>
         <div class="gallery">
             <div class="item">
                 <video controls autoplay>
@@ -89,43 +144,41 @@
                 </video>
                 <p>《期末考核曲目》</p>
             </div>
-            <div class="item">
-                <video controls>
-                    <source src="3.mp4" type="video/mp4">
-                </video>
-                <p> 爵士舞蹈《完美降落》</p>
-            </div>
         </div>
 
-        <h2>照片</h2>
+        <h2>美术</h2>
         <div class="gallery">
             <div class="item">
                 <img src="3.jpg" alt="部分三笔字和美术作品">
                 <p>部分三笔字和美术作品</p>
-            </div>
+            </div>     
+        </div>
+    </div>
+
+    <header>
+        <div class="container">
+            <h1>三、生活照</h1>
+        </div>
+    </header>
+    <div class="container">
+        <div class="gallery">
             <div class="item">
                 <img src="1.jpg" alt="长沙方特外协舞蹈演员">
                 <p>长沙方特外协舞蹈演员</p>
             </div>
-            
+            <div class="item">
+                <img src="sh2.jpg">
+            </div>
+            <div class="item">
+                <img src="sh3.jpg">
+            </div> 
+            <div class="item">
+                <img src="sh4.jpg">
+            </div>
         </div>
-
-        <h2>荣誉</h2>
-            <p>省级荣誉3项，校级荣誉10项</p>
-            <ol>
-            <li>2022.12/国家励志奖学金/湖南省教育厅</li>
-            <li>2022.12/三好学生/长沙师范学院</li>
-            <li>2022.6/社会实践奖学金/长沙师范学院</li>
-            <li>2022.6/湖南省第八届大学生思政理论课研究性学习竞赛《自媒体时代下大学生传承非遗文化的路径研究——以邵阳花鼓戏为例》本科组二等奖/长沙师范学院</li>
-            <li>2022.5/优秀共青团员干部/长沙师范学院委员会</li>
-            <li>2022.5/“吾爱舞蹈”儿童舞蹈创作线上平台建设及推广研究创业训练立项/长沙师范学院</li>
-            <li>2022.1/湖南省消费帮扶营销大赛先进个人/湖南省消费帮扶组委会</li>
-            <li>2021.12/国家励志奖学金/湖南省教育厅</li>
-            <li>2021.11/湖南省第七届大学生思政理论课研究性学习竞赛《关于“互联网＋网销模式”在洞口县的实施推广的实践研究》本科组三等奖/长沙师范学院</li>
-            <li>2021.8/疫情防控优秀志愿者/陵阳镇人民政府</li>
-            </ol>
-
     </div>
+
+    
 
 
 </body>
