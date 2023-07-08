@@ -1,0 +1,98 @@
+<!--
+ * @Author       : jonnyzhang02 71881972+jonnyzhang02@users.noreply.github.com
+ * @LastEditTime : 2023-07-08 22:03
+ * @FilePath     : \website\index.html
+ * 
+ * coded by ZhangYang@BUPT, my email is zhangynag0207@bupt.edu.cn
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>我的作品集</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #50b3a2;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        #photo-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .photo-item {
+            flex: 1 0 34%; /* 这个值可以根据你想要多少列的照片墙进行调整，比如，如果你想要5列，你可以使用 20% （100% / 5）。这个值应略小于实际值以留出间隙。 */
+            margin: 1%;  /* 这个值应该是 (100% - （实际列数 * 单列百分比）) 的一半。在5列的情况下，应为 (100% - 5*20%) / 2 = 1% */
+            box-sizing: border-box; /* 这样设置可以使得图片的宽度包含边框和内边距，而不只是内容 */
+        }
+
+        .photo-item img {
+            width: 100%; /* 这将确保图片填充整个div，可能会拉伸或压缩图片 */
+            height: auto;
+        }
+
+        #video-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .video-item {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>我的作品集</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <h2>视频</h2>
+        <div id="video-gallery">
+            <div class="video-item">
+                <video controls>
+                    <source src="1.mp4" type="video/mp4">
+                </video>
+                <p>《大鱼》</p>
+            </div>
+            <div class="video-item">
+                <video controls>
+                    <source src="2.mp4" type="video/mp4">
+                </video>
+                <p>《期末考核曲目》</p>
+            </div>
+            <!-- 更多视频项 -->
+        </div>
+
+        <h2>照片</h2>
+        <div id="photo-gallery">
+            <div class="photo-item">
+                <img src="kun.jpg" alt="照片1描述">
+            </div>
+            <div class="photo-item">
+                <img src="1.jpg" alt="照片2描述">
+            </div>
+            <div class="photo-item">
+                <img src="2.jpg" alt="照片3描述">
+            </div>
+            <!-- 更多照片项 -->
+        </div>
+
+    </div>
+</body>
+</html>
+
+
